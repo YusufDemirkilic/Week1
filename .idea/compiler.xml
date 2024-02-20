@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Taximeter" />
         <module name="AreaFinder" />
+        <module name="CircleArea" />
       </profile>
     </annotationProcessing>
   </component>
