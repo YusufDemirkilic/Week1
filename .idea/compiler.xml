@@ -6,8 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Taximeter" />
+        <module name="BodyIndex" />
         <module name="AreaFinder" />
+        <module name="Taximeter" />
         <module name="CircleArea" />
       </profile>
     </annotationProcessing>
