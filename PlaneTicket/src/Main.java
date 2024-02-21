@@ -3,12 +3,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // uçak programi
-        //mesafe ve yaş değeri negatif olmamali  (mesafe başına ücret 0.10 tl)
-        //   yolculuk şekli 1 veya 2 diye secilmelidir aksi takdirde hatalı girildi uyarısı verecektir
-        //12  yaşından kucuksa %50, 12 -24 yaş aralığı %10, 65 yaşından büyükse %30 indirim eğer gidiş dönüş seçili ise ekstra %20 indirim verecektir.
+        // veriable deinition
         int distance, age, travelCohice;
         double discount, ticketPrice, totalPrice = 1;
+        // receiving data from user
         Scanner scanner = new Scanner(System.in);
         System.out.print("Please enter the distance value: ");
         distance = scanner.nextInt();
@@ -16,8 +14,10 @@ public class Main {
         age = scanner.nextInt();
         System.out.print("Please enter the travel cohice value (1 => one way or 2 => round trip): ");
         travelCohice = scanner.nextInt();
+        // value control
         if (distance > 0 && age > 0) {
             ticketPrice = distance * 0.10;
+            // discount based on user age
             if (age < 12) {
                 discount = ticketPrice * 0.5;
                 totalPrice = ticketPrice - discount;
@@ -30,6 +30,7 @@ public class Main {
             } else {
                 totalPrice = ticketPrice;
             }
+            //users ticket choice for ticket discount
             switch (travelCohice) {
                 case 1:
                     System.out.println("Total Price: " + totalPrice);
