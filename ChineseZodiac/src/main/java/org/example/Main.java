@@ -8,7 +8,7 @@ public class Main {
         // 12 ile bölümden kalan a göre
         // Çin Zodyağı nasıl hesaplanır?
         // kullanıcı seçimini göre string metodu ile tanımlamamızı yaptık
-        int birthYear;
+        int birthYear,cal;
         String[] zodiac = new String[12];
         zodiac[0] = "monkey";
         zodiac[1] = "cockerel";
@@ -26,9 +26,10 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.print("please enter birtyear information:  ");
         birthYear = scanner.nextInt();
+        cal=birthYear%12;
         // kullanıcıdan alınan veri ile seçilene göre ekrana burç çıkıtısı yaptık
         for (int i = 0; i < 12; i++) {
-            if (birthYear == i) {
+            if (cal == i) {
                 System.out.println("your zodiac sign "+zodiac[i]);
 
             }
