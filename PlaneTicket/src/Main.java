@@ -5,6 +5,7 @@ public class Main {
     public static void main(String[] args) {
         // veriable deinition
         int distance, age, travelCohice;
+        double a=0.10;
         double discount, ticketPrice, totalPrice = 1;
         // receiving data from user
         Scanner scanner = new Scanner(System.in);
@@ -16,7 +17,7 @@ public class Main {
         travelCohice = scanner.nextInt();
         // value control
         if (distance > 0 && age > 0) {
-            ticketPrice = distance * 0.10;
+            ticketPrice = distance * a;
             // discount based on user age
             if (age < 12) {
                 discount = ticketPrice * 0.5;
